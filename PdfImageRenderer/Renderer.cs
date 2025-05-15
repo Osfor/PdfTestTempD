@@ -20,7 +20,7 @@ public static class Renderer
 
         for (var p = 0; p < document.Pages; p++)
         {
-            using var page = document.GetPage(0);
+            using var page = document.GetPage(p);
             using var result = page.Render(scale);
             using var stream = new MemoryStream();
             switch (imageType)

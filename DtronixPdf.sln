@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DtronixPdf", "DtronixPdf\Dt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DtronixPdf.ImageSharp", "DtronixPdf.ImageSharp\DtronixPdf.ImageSharp.csproj", "{59A2B9DB-514C-4463-8AB8-3779B62FD99E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfTestTemp", "PdfTestTemp\PdfTestTemp.csproj", "{F8946BF0-1B8A-4948-8F53-2432F7216D48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfTestTemp", "PdfTestTemp\PdfTestTemp.csproj", "{F8946BF0-1B8A-4948-8F53-2432F7216D48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfToImage", "PdfToImage\PdfToImage.csproj", "{8CC2E5FA-AB1F-40A7-8D1D-743B3D14DC52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfImageRenderer", "PdfImageRenderer\PdfImageRenderer.csproj", "{8CC2E5FA-AB1F-40A7-8D1D-743B3D14DC52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
