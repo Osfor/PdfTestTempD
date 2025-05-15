@@ -3,6 +3,7 @@
   <PropertyGroup>
     <Description>Tool to view and perform common modifications to PDFs. Based on PDFium.</Description>
     <Version>1.3.1.0</Version>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
 	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
 		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>

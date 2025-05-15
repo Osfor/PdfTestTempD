@@ -1,48 +1,18 @@
-﻿using System;
-using System.IO;
-using DtronixPdf;
-using DtronixPdf.ImageSharp;
-using SixLabors.ImageSharp;
-
-using Microsoft.Extensions.Hosting;
-
-
-//требуется заставить работать на Linux
-
-Console.WriteLine("Task started");
+﻿using PdfImageRenderer;
 
 AppDomain.CurrentDomain.UnhandledException += UnhandledExceptionTrapper;
 
+Console.WriteLine("Task started");
 
-var b = Host.CreateApplicationBuilder(args);
-var app = b.Build();
+using var fs = new FileStream("test.pdf", FileMode.Open);
 
-////////////////////////////////////////
-
-const string TestPdf = "test.pdf";
-
-
-var document = PdfDocument.Load(TestPdf, null);
-
-using var page = document.GetPage(0);
-
-float scale = 1.6f;
-using var result = page.Render(scale);
-using var stream = new MemoryStream();
-result.GetImage().SaveAsPng(stream);
-
-Console.WriteLine(Convert.ToBase64String(stream.ToArray()));
-
-document.Dispose();
-
-Console.WriteLine($"Rendering Complete");
-
-
-////////////////////////////////////////
+foreach (var imageBytes in Renderer.RenderPdfToPageImages(fs, ImageType.Png, 1.6f))
+{
+    Console.WriteLine(Convert.ToBase64String(imageBytes).Substring(50)+ "...");
+}
 
 Console.WriteLine("Task completed");
 
-app.Run();
 
 static void UnhandledExceptionTrapper(object sender, UnhandledExceptionEventArgs e)
 {

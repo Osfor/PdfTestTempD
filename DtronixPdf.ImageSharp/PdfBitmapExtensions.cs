@@ -3,6 +3,7 @@ using SixLabors.ImageSharp;
 
 namespace DtronixPdf.ImageSharp
 {
+    
     public static class PdfBitmapExtensions
     {
         public static unsafe Image<Bgra32> GetImage(this PdfBitmap bitmap)

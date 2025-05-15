@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DtronixPdf.ImageSharp", "Dt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfTestTemp", "PdfTestTemp\PdfTestTemp.csproj", "{F8946BF0-1B8A-4948-8F53-2432F7216D48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfToImage", "PdfToImage\PdfToImage.csproj", "{8CC2E5FA-AB1F-40A7-8D1D-743B3D14DC52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F8946BF0-1B8A-4948-8F53-2432F7216D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8946BF0-1B8A-4948-8F53-2432F7216D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8946BF0-1B8A-4948-8F53-2432F7216D48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CC2E5FA-AB1F-40A7-8D1D-743B3D14DC52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CC2E5FA-AB1F-40A7-8D1D-743B3D14DC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CC2E5FA-AB1F-40A7-8D1D-743B3D14DC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CC2E5FA-AB1F-40A7-8D1D-743B3D14DC52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
