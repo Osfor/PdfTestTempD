@@ -3,9 +3,9 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-back 	
 
 WORKDIR /src 																			
-COPY ./PdfTestTemp/ ./															
-COPY ./DtronixPdf/ ./
-COPY ./DtronixPdf.ImageSharp/ ./
+COPY ../* / ./															
+
+WORKDIR /src/PdfTestTemp/ 	
 
 RUN dotnet publish "PdfTestTemp.csproj" -c Release -o /app/publish --nologo 				
 
