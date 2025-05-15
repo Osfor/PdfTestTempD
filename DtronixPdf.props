@@ -1,0 +1,19 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Company>Dtronix</Company>
+    <Product>Dtronix PDF</Product>
+    <Copyright>Copyright © Dtronix 2025</Copyright>
+    <Authors>DJGosnell</Authors>
+    <PackageProjectUrl>https://github.com/Dtronix/DtronixPdf</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Dtronix/DtronixPdf</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageTags>pdf editor modify viewer export</PackageTags>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+</Project>
