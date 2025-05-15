@@ -8,7 +8,7 @@ using var fs = new FileStream("test.pdf", FileMode.Open);
 
 foreach (var imageBytes in Renderer.RenderPdfToPageImages(fs, ImageType.Png, 1.6f))
 {
-    Console.WriteLine(Convert.ToBase64String(imageBytes).Substring(50)+ "...");
+    Console.WriteLine(Convert.ToBase64String(imageBytes).Substring(0, 50) + "...");
 }
 
 Console.WriteLine("Task completed");
